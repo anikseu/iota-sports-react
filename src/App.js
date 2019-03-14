@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Switch} from "react-router-dom"
 import './App.css';
 
 import Home from "./component/Home"
-import About from "./component/About"
 import Contact from "./component/Contact"
 import Error from "./component/Error"
 import Header from "./component/Header"
@@ -19,8 +18,7 @@ class App extends Component {
       <div className=""> 
       <Header/> 
       <Switch>
-      <Route path = "/" component = {Home} exact />
-      <Route path = "/about" component = {About} /> 
+      <Route path = "/" component = {Home} />
       <Route path = "/contact" component = {Contact} /> 
       <Route component = {Error}/> 
 

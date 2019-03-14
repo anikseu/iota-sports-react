@@ -1,6 +1,6 @@
-import React, {Component} from "react"; 
+import React, { Component } from 'react';
 
-class About extends Component {
+class HomeMain extends Component {
 
     constructor () {
       super();
@@ -34,12 +34,12 @@ class About extends Component {
   
         <div className="container">
           
-         ABOUT US DUMMY TEXT
+          This is Homepage
            
         </div>
   
       );
     }
   }
-
-export default About;  
+  
+  export default HomeMain;
