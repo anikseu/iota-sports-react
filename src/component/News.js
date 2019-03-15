@@ -33,7 +33,10 @@ class News extends Component {
       return (
         
   
-        <div className="container">
+        <div className="container-newsbox">
+
+          <h2 className="titleText" align="center"> <img src="/asset/latest_icon.png"/> Latest News
+          <img src="/asset/latest_icon.png"/> </h2>
           
           <FrontpageItem posts={this.state.news} />
            

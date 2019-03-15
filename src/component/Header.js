@@ -6,11 +6,11 @@ const Header = () => {
 
  <div> 
 
-  <div className="container">
+<div className="container">
+  <div className="row">
      <img src="https://via.placeholder.com/1150x150" alt="banner" width="100%"/>
-  </div>
 
-  <ul className="top-menu">
+     <ul className="top-menu">
      
      <li className="list-top" >
      <NavLink to="/"> Home </NavLink> 
@@ -20,9 +20,35 @@ const Header = () => {
      <NavLink to="/about"> About </NavLink> 
      </li>
 
+     <li className="list-top">
+     <NavLink to="/about"> Live Matches </NavLink> 
+     </li>
+
+     <li className="list-top">
+     <NavLink to="/about"> Fixture </NavLink> 
+     </li>
+
+
+     <li className="list-top">
+     <NavLink to="/about"> News </NavLink> 
+     </li>
+
+     <li className="list-top">
+     <NavLink to="/about"> Ranking </NavLink> 
+     </li>
+
+     <li className="list-top">
+     <NavLink to="/about"> IPL 2019 </NavLink> 
+     </li>
+
     
     
    </ul>
+  </div>
+
+  </div>
+
+ 
 
    </div> 
     );
