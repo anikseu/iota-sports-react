@@ -4,6 +4,9 @@ import News from "./News"
 import About from "./About"
 import HomeMain from "./HomeMain"
 import NewsDetails from "./NewsDetail";
+import Ranking from "./Ranking";
+import Fixture from "../Fixture";
+import Contact from "./Contact";
 
 
 const Home = () => {
@@ -25,7 +28,10 @@ const Home = () => {
      <Switch>
       <Route path = "/" component = {HomeMain} exact/>
       <Route path = "/about" component = {About} /> 
-      <Route path = "/NewsDetail/:newsId" component = {NewsDetails} /> 
+      <Route path = "/NewsDetail/:newsId" component = {NewsDetails} />
+      <Route path = "/ranking" component = {Ranking} />  
+      <Route path = "/fixture" component = {Fixture} /> 
+      <Route path = "/contact" component = {Contact} /> 
       <Route component = {Error}/> 
      </Switch>
      </div>

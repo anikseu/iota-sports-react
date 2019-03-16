@@ -25,7 +25,7 @@ const Header = () => {
      </li>
 
      <li className="list-top">
-     <NavLink to="/about"> Fixture </NavLink> 
+     <NavLink to="/fixture"> Fixture </NavLink> 
      </li>
 
 
@@ -34,7 +34,15 @@ const Header = () => {
      </li>
 
      <li className="list-top">
-     <NavLink to="/about"> Ranking </NavLink> 
+     <NavLink to="/ranking"> Ranking </NavLink> 
+     </li>
+
+     <li className="list-top">
+     <NavLink to="/video"> Video </NavLink> 
+     </li>
+
+     <li className="list-top">
+     <NavLink to="/contact"> Contact </NavLink> 
      </li>
 
      <li className="list-top">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-class HomeMain extends Component {
+class Fixture extends Component {
 
   constructor() {
     super();
@@ -61,7 +61,7 @@ class HomeMain extends Component {
 
       <div className="container">
 
-        <h2 align="center">Latest Matches</h2>
+        <h2 align="center">Cricket Fixture</h2>
 
         <div className="container">
 
@@ -74,4 +74,4 @@ class HomeMain extends Component {
   }
 }
 
-export default HomeMain;
+export default Fixture;
