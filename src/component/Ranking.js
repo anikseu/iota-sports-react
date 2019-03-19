@@ -1,6 +1,4 @@
 import React, {Component} from "react"; 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 
 class Ranking extends Component {
 
@@ -48,10 +46,26 @@ class Ranking extends Component {
    
     render() {
 
-    let posts = this.state.test; 
+    let test = this.state.test; 
     let odi = this.state.odi; 
-    console.log(odi); 
-    let testLoop = odi.map((post, index)=> {
+   
+    let odiLoop = odi.map((post, index)=> {
+        return (
+                   
+            
+                <tr>
+                  <td>{post.currentRank}</td>
+                  <td>{post.name}</td>
+                  <td>{post.currentPoints}</td>
+                  <td>{post.currentRating}</td>
+                </tr>
+               
+             
+  
+        )
+      })
+
+      let testLoop = test.map((post, index)=> {
         return (
                    
             
@@ -112,7 +126,7 @@ class Ranking extends Component {
                 </tr>
               </thead>
 
-              <tbody>{testLoop}</tbody>
+              <tbody>{odiLoop}</tbody>
                
                
             </table>

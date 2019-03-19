@@ -3,10 +3,8 @@ import {BrowserRouter, Route, Switch} from "react-router-dom"
 import './App.css';
 
 import Home from "./component/Home"
-import Contact from "./component/Contact"
-import Error from "./component/Error"
 import Header from "./component/Header"
-
+import Footer from "./component/Footer"
 
 class App extends Component {
   render() {
@@ -19,10 +17,9 @@ class App extends Component {
       <Header/> 
       <Switch>
       <Route path = "/" component = {Home} />
-      <Route path = "/contact" component = {Contact} /> 
-      <Route component = {Error}/> 
-
+      
       </Switch>
+      <Footer/>
       </div>
 
       </BrowserRouter>
