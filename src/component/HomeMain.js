@@ -30,8 +30,16 @@ class HomeMain extends Component {
 
   render() {
 
+    // function decideBlinking(status){
+    //   if(status == "inprogress")
+    //     return status.toUpperCase();
+      
+    //   return status; 
+    // }
 
     let posts = this.state.match;
+
+    console.log(posts); 
 
     let postLoop = posts.map((post, index) => {
       return (
@@ -39,7 +47,7 @@ class HomeMain extends Component {
           <div className="card bg-white">
             <div className="card-body text-center">
               <p className="card-text">
-                <div className="blink_me">{(post.matchStatus).toUpperCase()}</div>
+                {post.matchStatus}<br/>
                 <b>{post.series}</b><br />
                 {post.status} | {post.matchType}<br />
                 <img src={"http://i.cricketcb.com/cbzandroid/2.0/flags/team_" + post.team1_logo + "_50.png"} alt="team2" height="50px" />
@@ -47,7 +55,7 @@ class HomeMain extends Component {
                 <img src={"http://i.cricketcb.com/cbzandroid/2.0/flags/team_" + post.team2_logo + "_50.png"} alt="team2" height="50px" />
                 <br /><br />
                 <Link to = {"/MatchDetails/"+post.matchId}>
-                <button type="button" class="btn btn-success">View Details</button>
+                <button type="button" className="btn btn-success">View Details</button>
                 </Link>
               </p>
             </div></div>

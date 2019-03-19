@@ -5,7 +5,7 @@ import About from "./About"
 import HomeMain from "./HomeMain"
 import NewsDetails from "./NewsDetail";
 import Ranking from "./Ranking";
-import Fixture from "../Fixture";
+import Fixture from "./Fixture";
 import Contact from "./Contact";
 
 

@@ -14,14 +14,14 @@ class FrontpageItem extends React.Component {
           <Link to={"/NewsDetail/"+post.id} >
                   <h5>{post.title}</h5>
           </Link>
-          <p>{parseInt(post.time/(60*60), 10)} hours ago</p>
+          <p >{parseInt(post.time/(60*60), 10)} hours ago</p>
         </article>
 
       )
     })
 
     return (
-      <div>
+      <div align="left">
         {postLoop}
          
       </div>
