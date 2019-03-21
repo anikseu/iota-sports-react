@@ -98,7 +98,6 @@ li a:hover {
 }
 
 p {
-  text-align: center;
   font-weight: 500;
 }
 input[type=text],input[type=email],input[type=phone], select, textarea {

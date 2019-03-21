@@ -48,7 +48,7 @@ const Header = () => {
      </li>
 
      <li className="list-top">
-     <NavLink to="/about"> IPL 2019 </NavLink> 
+     <NavLink to="/ipl"> IPL 2019 </NavLink> 
      </li>
 
     

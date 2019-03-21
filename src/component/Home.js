@@ -7,6 +7,8 @@ import NewsDetails from "./NewsDetail";
 import Ranking from "./Ranking";
 import Fixture from "./Fixture";
 import Contact from "./Contact";
+import Ipl from "./Ipl";
+import ChannelList from "./ChannelList";
 
 
 const Home = () => {
@@ -17,9 +19,10 @@ const Home = () => {
   <div className="row">
     <div className="col-md-4 border">
     
-    
+    <Switch>
     <Route path = "/" component = {News} /> 
-
+    <Route path = "/ipl" component = {ChannelList} /> 
+    </Switch>
 
     </div>
     <div className="col-md-8 border">
@@ -32,6 +35,7 @@ const Home = () => {
       <Route path = "/ranking" component = {Ranking} />  
       <Route path = "/fixture" component = {Fixture} /> 
       <Route path = "/contact" component = {Contact} /> 
+      <Route path = "/ipl" component = {Ipl} /> 
       <Route component = {Error}/> 
      </Switch>
      </div>

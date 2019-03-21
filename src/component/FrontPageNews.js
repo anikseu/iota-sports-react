@@ -1,6 +1,17 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 
+var timeStamp = Math.floor(Date.now() / 1000);
+
+
+function getTime(seconds){
+
+  if(seconds>3600){
+    return parseInt(seconds/3600, 10) + ' hours ago'; 
+  }
+  return parseInt(seconds/60, 10) + ' minutes ago'; 
+
+}
 
 
 class FrontpageItem extends React.Component {
@@ -14,7 +25,7 @@ class FrontpageItem extends React.Component {
           <Link to={"/NewsDetail/"+post.id} >
                   <h5>{post.title}</h5>
           </Link>
-          <p>{parseInt(post.time/(60*60), 10)} hours ago</p>
+          <p>Posted on : {getTime(timeStamp - parseInt(post.time, 10)) }</p>
         </article>
 
       )

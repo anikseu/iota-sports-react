@@ -15,7 +15,7 @@ function getTime(seconds){
 }
 
 
-class NewsDetails extends Component {
+class Ipl extends Component {
 
     constructor () {
       super();
@@ -71,7 +71,7 @@ class NewsDetails extends Component {
   
         <div className="container-newsdetail">
 
-        {postLoop}
+        IPL BRO
            
         </div>
   
@@ -79,4 +79,4 @@ class NewsDetails extends Component {
     }
   }
   
-  export default NewsDetails;
+  export default Ipl;
