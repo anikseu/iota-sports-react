@@ -26,9 +26,9 @@ const Header = () => {
      </li>
 
 
-     <li className="list-top">
+     {/* <li className="list-top">
      <NavLink to="/about"> News </NavLink> 
-     </li>
+     </li> */}
 
      <li className="list-top">
      <NavLink to="/ranking"> Ranking </NavLink> 

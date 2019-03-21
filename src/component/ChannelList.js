@@ -1,17 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-var timeStamp = Math.floor(Date.now() / 1000);
-
-
-function getTime(seconds) {
-
-    if (seconds > 3600) {
-        return parseInt(seconds / 3600, 10) + ' hours ago';
-    }
-    return parseInt(seconds / 60, 10) + ' minutes ago';
-
-}
 
 
 class ChannelList extends React.Component {

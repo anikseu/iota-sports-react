@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactHLS from 'react-hls';
 
 
 
@@ -44,7 +45,10 @@ class Live extends Component {
   
         <div className="container-newsdetail">
 
-        {console.log(url)}
+        <center>Press play button on the player to start streaming </center>
+
+            <ReactHLS url={url}  height="480" width="700"/>
+
            
         </div>
   

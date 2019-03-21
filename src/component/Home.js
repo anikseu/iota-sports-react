@@ -10,6 +10,8 @@ import Contact from "./Contact";
 import Ipl from "./Ipl";
 import ChannelList from "./ChannelList";
 import Live from "./Live";
+import Privacy from "./Privacy";
+import Tos from "./Tos";
 
 
 const Home = () => {
@@ -38,6 +40,8 @@ const Home = () => {
       <Route path = "/fixture" component = {Fixture} /> 
       <Route path = "/contact" component = {Contact} /> 
       <Route path = "/ipl" component = {Ipl} /> 
+      <Route path = "/privacy" component = {Privacy} /> 
+      <Route path = "/tos" component = {Tos} /> 
       <Route path = "/live/:channelId" component = {Live} />
       <Route component = {Error}/> 
      </Switch>

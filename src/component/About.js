@@ -34,7 +34,9 @@ class About extends Component {
   
         <div className="container">
           
-         ABOUT US DUMMY TEXT
+          <h2><strong>About us</strong></h2>
+
+          <p> Under maintenance. </p>
            
         </div>
   
