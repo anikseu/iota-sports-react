@@ -9,6 +9,7 @@ import Fixture from "./Fixture";
 import Contact from "./Contact";
 import Ipl from "./Ipl";
 import ChannelList from "./ChannelList";
+import Live from "./Live";
 
 
 const Home = () => {
@@ -20,8 +21,9 @@ const Home = () => {
     <div className="col-md-4 border">
     
     <Switch>
-    <Route path = "/" component = {News} /> 
-    <Route path = "/ipl" component = {ChannelList} /> 
+    <Route path = "/live" component = {ChannelList}/>
+    <Route path = "/ipl" component = {ChannelList}/>
+    <Route path = "/" component = {News} />  
     </Switch>
 
     </div>
@@ -36,6 +38,7 @@ const Home = () => {
       <Route path = "/fixture" component = {Fixture} /> 
       <Route path = "/contact" component = {Contact} /> 
       <Route path = "/ipl" component = {Ipl} /> 
+      <Route path = "/live/:channelId" component = {Live} />
       <Route component = {Error}/> 
      </Switch>
      </div>
