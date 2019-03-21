@@ -54,7 +54,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: darkgreen;
+  background-color: #1E1A29;
   background-image: url("/asset/header_bg.png"); 
   width: 100%; 
 }

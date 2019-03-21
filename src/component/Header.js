@@ -8,7 +8,7 @@ const Header = () => {
 
 <div className="container">
   <div className="row">
-     <img src="https://via.placeholder.com/1150x150" alt="banner" width="100%"/>
+     <img src="/asset/banner.png" alt="banner" width="100%"/>
 
      <ul className="top-menu">
      
