@@ -16,19 +16,14 @@ const Footer = () => {
             <div className="row ">
             
 
-                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                    <div className="footer-widget ">
-                        <div className="footer-title">Trending</div>
-                        
-                    </div>
-                </div>
+       
               
                 <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
                     <div className="footer-widget ">
                         <div className="footer-title">Info</div>
                         
                         <Link to="/about">• About</Link> <br/>
-                        <Link to="/terms">• Terms And Condition</Link><br/>
+                        <Link to="/tos">• Terms And Condition</Link><br/>
                         <Link to="/privacy">• Privacy Policy</Link> <br/>
                        
                     </div>
@@ -45,18 +40,23 @@ const Footer = () => {
 
                     </div>
                 </div>
-             
-                <div className="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
+
+
+                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
                     <div className="footer-widget ">
-                        <h3 className="footer-title">Subscribe Newsletter</h3>
-                        <form>
-                            <div className="newsletter-form">
-                              
-                                <button className="btn btn-default btn-sm" type="submit">Go</button>
-                            </div>
-                        </form>
+                        <div className="footer-title">Free Android App</div>
+                        <a href="http://crichub.xyz/download/ipl2019.apk"><img src="/asset/apk_btn.png" alt="download for android" width="200px"/></a>
                     </div>
                 </div>
+
+                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div className="footer-widget ">
+                        <div className="footer-title">Premium iOS App</div>
+                        <a href="https://itunes.apple.com/kw/app/ipl-2019-live/id1437185251"><img src="/asset/iphone_btn.png" alt="download for android" width="200px"/></a>
+                    </div>
+                </div>
+             
+                
                
             </div>
             <div className="row ">

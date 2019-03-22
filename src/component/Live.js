@@ -25,6 +25,8 @@ class Live extends Component {
           news: response
         })
       })
+
+
      
     }
 
@@ -45,10 +47,12 @@ class Live extends Component {
   
         <div className="container-newsdetail">
 
-        <center>Press play button on the player to start streaming </center>
+        <center>Press <b>play</b> button on the player to start streaming </center> 
+        <br/>
 
-            <ReactHLS url={url}  height="480" width="700"/>
+            <ReactHLS url={url}  height="380" width="700"/>
 
+           
            
         </div>
   

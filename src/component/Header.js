@@ -48,7 +48,7 @@ const Header = () => {
      </li>
 
      <li className="list-top">
-     <NavLink to="/ipl"> IPL 2019 </NavLink> 
+     <NavLink to="/ipl"> <b>Watch Live</b> </NavLink> 
      </li>
 
     
@@ -60,7 +60,8 @@ const Header = () => {
 
  
 
-   </div> 
+   </div>
+    
     );
 }
 

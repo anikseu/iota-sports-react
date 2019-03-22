@@ -14,6 +14,25 @@ function getTime(seconds){
 
 }
 
+function decodeHTMLEntities(text) {
+  var entities = [
+      ['amp', '&'],
+      ['apos', '\''],
+      ['#x27', '\''],
+      ['#x2F', '/'],
+      ['#39', '\''],
+      ['#47', '/'],
+      ['lt', '<'],
+      ['gt', '>'],
+      ['nbsp', ' '],
+      ['quot', '"']
+  ];
+
+  for (var i = 0, max = entities.length; i < max; ++i) 
+      text = text.replace(new RegExp('&'+entities[i][0]+';', 'g'), entities[i][1]);
+
+  return text;
+}
 
 class NewsDetails extends Component {
 
@@ -47,6 +66,10 @@ class NewsDetails extends Component {
 
     let posts = this.state.news; 
 
+    
+
+    console.log(posts); 
+
     let postLoop = posts.map((post, index)=> {
       return (
         <article key={index} className='xiong-block'>
@@ -60,7 +83,7 @@ class NewsDetails extends Component {
 
           <p><b>{post.description}</b></p>
 
-          <p>{post.content}</p>
+          {decodeHTMLEntities(post.content)}
         </article>
 
       )
