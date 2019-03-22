@@ -71,7 +71,7 @@ class Tos extends Component {
 
 <p>You warrant and represent that:</p>
 
-<ul>
+<ul className="list">
     <li>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;</li>
     <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;</li>
     <li>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy</li>
@@ -84,19 +84,18 @@ class Tos extends Component {
 
 <p>The following organizations may link to our Website without prior written approval:</p>
 
-<ul>
+
     <li>Government agencies;</li>
     <li>Search engines;</li>
     <li>News organizations;</li>
     <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and</li>
     <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
-</ul>
 
 <p>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.</p>
 
 <p>We may consider and approve other link requests from the following types of organizations:</p>
 
-<ul>
+
     <li>commonly-known consumer and/or business information sources;</li>
     <li>dot.com community sites;</li>
     <li>associations or other groups representing charities;</li>
@@ -104,7 +103,6 @@ class Tos extends Component {
     <li>internet portals;</li>
     <li>accounting, law and consulting firms; and</li>
     <li>educational institutions and trade associations.</li>
-</ul>
 
 <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of CricInTime; and (d) the link is in the context of general resource information.</p>
 

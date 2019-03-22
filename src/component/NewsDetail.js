@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 
-
 var timeStamp = Math.floor(Date.now() / 1000);
 
 
@@ -59,6 +58,22 @@ class NewsDetails extends Component {
      
     }
 
+    componentDidUpdate(){
+      
+      var newsId = this.props.match.params.newsId;
+      const newsUrl = "https://cricplatoon.xyz/web/news.php?newsId="+newsId;
+      console.log("debug: "+newsUrl);
+      fetch(newsUrl)
+      .then(response => response.json())
+      .then(response => {
+        this.setState({
+          news: response
+        })
+      })
+     
+
+    }
+
    
    
    
@@ -66,7 +81,6 @@ class NewsDetails extends Component {
 
     let posts = this.state.news; 
 
-    
 
     console.log(posts); 
 

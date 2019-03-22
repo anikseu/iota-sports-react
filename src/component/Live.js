@@ -50,8 +50,9 @@ class Live extends Component {
         <center>Press <b>play</b> button on the player to start streaming </center> 
         <br/>
 
-            <ReactHLS url={url}  height="380" width="700"/>
-
+        <div className = "video-wrapper">
+            <ReactHLS url={url} width="100%" height="100%" />
+        </div>
            
            
         </div>

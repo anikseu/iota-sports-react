@@ -19,16 +19,11 @@ const Home = () => {
  
 <div className="container mainBox bg-white">
 
-  <div className="row">
-    <div className="col-md-4 border">
+  <div className="row flex-row-reverse">
     
-    <Switch>
-    <Route path = "/live" component = {ChannelList}/>
-    <Route path = "/ipl" component = {ChannelList}/>
-    <Route path = "/" component = {News} />  
-    </Switch>
 
-    </div>
+  
+
     <div className="col-md-8 border">
      
      <div className="container-largebox">
@@ -46,7 +41,16 @@ const Home = () => {
       <Route component = {Error}/> 
      </Switch>
      </div>
+    </div>
+
+    <div className="col-md-4 border">
     
+    <Switch>
+    <Route path = "/live" component = {ChannelList}/>
+    <Route path = "/ipl" component = {ChannelList}/>
+    <Route path = "/" component = {News} />  
+    </Switch>
+
     </div>
    
   </div>

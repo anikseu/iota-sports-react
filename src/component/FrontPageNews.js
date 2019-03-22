@@ -22,7 +22,7 @@ class FrontpageItem extends React.Component {
       return (
         <article key={index} className='news-block'>
         <img src={post.image} alt="" width="100%"/>
-          <Link to={"/NewsDetail/"+post.newsId} >
+          <Link to={"/NewsDetail/"+post.newsId}  >
                   <h5>{post.title}</h5>
           </Link>
           <p>Posted on : {getTime(timeStamp - parseInt(post.time, 10)) }</p>

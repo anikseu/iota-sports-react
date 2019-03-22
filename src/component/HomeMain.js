@@ -37,6 +37,15 @@ class HomeMain extends Component {
       return status.toUpperCase(); 
     }
 
+   
+    function isLive(status){
+      if(status === "inprogress")
+        return <a href="/ipl">
+        <button type="button" className="btn btn-danger">Watch Live</button>
+        </a>; 
+      
+    }
+
     let posts = this.state.match;
 
     let postLoop = posts.map((post, index) => {
@@ -54,8 +63,9 @@ class HomeMain extends Component {
                 <br />
                 {post.status} <br /><br />
                 <Link to = {"/MatchDetails/"+post.matchId}>
-                <button type="button" className="btn btn-success">View Details</button>
-                </Link>
+                 <button type="button" className="btn btn-success">View Details</button>
+                </Link>   
+                 {isLive(post.matchStatus)}
               </p>
             </div></div>
         </article>

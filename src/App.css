@@ -4,6 +4,7 @@
 }
 
 body {
+  font-family: 'Titillium Web', sans-serif; 
   background-image: url("/asset/bg_image.png"); 
 }
 
@@ -100,6 +101,17 @@ li a:hover {
 p {
   font-weight: 500;
 }
+
+.video-wrapper {
+  position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom:200px; 
+ }
+
+ 
 input[type=text],input[type=email],input[type=phone], select, textarea {
   width: 100%;
   padding: 12px;
@@ -158,3 +170,7 @@ hr { border-top: 1px solid #e4e7e9; margin-bottom: 50px; margin-top: 50px; }
 
 
 .tiny-footer { font-size: 14px; padding: 14px 0px; font-weight: 600; background-color: transparent; border-top: 1px solid #152e3d; color: #888d90; line-height: 1; }
+
+.btn-danger {
+  margin-left : 10px; 
+}
