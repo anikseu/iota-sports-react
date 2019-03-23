@@ -1,6 +1,6 @@
 import React, {Component} from "react"; 
 
-class About extends Component {
+class Video extends Component {
 
     constructor () {
       super();
@@ -34,7 +34,7 @@ class About extends Component {
   
         <div className="container">
           
-          <h2><strong>About us</strong></h2>
+          <h2><strong>Cricket Videos</strong></h2>
 
           <p> Under maintenance. </p>
            
@@ -44,4 +44,4 @@ class About extends Component {
     }
   }
 
-export default About;  
+export default Video;  

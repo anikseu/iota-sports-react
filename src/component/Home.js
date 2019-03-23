@@ -12,6 +12,7 @@ import ChannelList from "./ChannelList";
 import Live from "./Live";
 import Privacy from "./Privacy";
 import Tos from "./Tos";
+import Video from "./Video";
 
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
      <Switch>
       <Route path = "/" component = {HomeMain} exact/>
       <Route path = "/about" component = {About} /> 
+      <Route path = "/video" component = {Video} /> 
       <Route path = "/NewsDetail/:newsId" component = {NewsDetails} />
       <Route path = "/ranking" component = {Ranking} />  
       <Route path = "/fixture" component = {Fixture} /> 
