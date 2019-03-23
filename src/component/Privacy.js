@@ -12,7 +12,7 @@ class Privacy extends Component {
   
     componentDidMount (){
   
-      const newsUrl = "http://localhost:3000/asset/news.json";
+      const newsUrl = "/asset/news.json";
   
       fetch(newsUrl)
       .then(response => response.json())

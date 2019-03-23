@@ -12,7 +12,7 @@ class Video extends Component {
   
     componentDidMount (){
   
-      const newsUrl = "";
+      const newsUrl = "/asset/news.json";
   
       fetch(newsUrl)
       .then(response => response.json())

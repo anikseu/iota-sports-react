@@ -13,7 +13,7 @@ class News extends Component {
   
     componentDidMount (){
   
-      const newsUrl = "http://cricplatoon.xyz/web/news_web.php?query=all";
+      const newsUrl = "https://cricplatoon.xyz/web/news_web.php?query=all";
   
       fetch(newsUrl)
       .then(response => response.json())

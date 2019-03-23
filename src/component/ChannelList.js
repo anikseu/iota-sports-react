@@ -15,7 +15,7 @@ class ChannelList extends React.Component {
 
     componentDidMount() {
 
-        const newsUrl = "http://crichub.xyz/web/get.php";
+        const newsUrl = "https://crichub.xyz/web/get.php";
 
         fetch(newsUrl, {
             method: 'GET',

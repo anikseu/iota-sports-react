@@ -40,7 +40,7 @@ class Contact extends Component {
 
                     <p>Contact Us</p>
                     <div>
-                        <form action="http://cricplatoon.xyz/web/contact.php">
+                        <form action="https://cricplatoon.xyz/web/contact.php">
                             <label>Name</label>
                             <input type="text" id="name" name="firstname" placeholder="Your name.." />
 

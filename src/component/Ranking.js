@@ -15,7 +15,7 @@ class Ranking extends Component {
 
        document.title = "Ranking | Men's National Team"
   
-      const newsUrl = "http://cricplatoon.xyz/web/?TEST";
+      const newsUrl = "https://cricplatoon.xyz/web/?TEST";
   
       fetch(newsUrl, {            
         method: 'GET',
@@ -27,7 +27,7 @@ class Ranking extends Component {
         })
       })
 
-      const odiUrl = "http://cricplatoon.xyz/web/?ODI";
+      const odiUrl = "https://cricplatoon.xyz/web/?ODI";
   
       fetch(odiUrl, {            
         method: 'GET',
