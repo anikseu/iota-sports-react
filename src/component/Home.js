@@ -13,6 +13,7 @@ import Live from "./Live";
 import Privacy from "./Privacy";
 import Tos from "./Tos";
 import Video from "./Video";
+import NewsHome from "./section/NewsHome";
 
 
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
       <Route path = "/fixture" component = {Fixture} /> 
       <Route path = "/contact" component = {Contact} /> 
       <Route path = "/ipl" component = {Ipl} /> 
+      <Route path = "/news" component = {NewsHome} /> 
       <Route path = "/privacy" component = {Privacy} /> 
       <Route path = "/tos" component = {Tos} /> 
       <Route path = "/live/:channelId" component = {Live} />

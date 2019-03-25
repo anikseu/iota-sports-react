@@ -10,19 +10,19 @@ class About extends Component {
    
     }
   
-    componentDidMount (){
+    // componentDidMount (){
   
-      const newsUrl = "";
+    //   const newsUrl = "";
   
-      fetch(newsUrl)
-      .then(response => response.json())
-      .then(response => {
-        this.setState({
-          news: response
-        })
-      })
+    //   fetch(newsUrl)
+    //   .then(response => response.json())
+    //   .then(response => {
+    //     this.setState({
+    //       news: response
+    //     })
+    //   })
      
-    }
+    // }
 
    
     

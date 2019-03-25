@@ -13,8 +13,7 @@ class Fixture extends Component {
 
   componentDidMount() {
 
-    const endpointURL = "https://cricplatoon.xyz/web/fixture.php?intl";
-    const endpointURL2 = "https://cricplatoon.xyz/web/fixture.php?domestic"; 
+    const endpointURL = "http://127.0.0.1/cricintime/";
 
     fetch(endpointURL)
     .then(response => response.json())
@@ -24,14 +23,7 @@ class Fixture extends Component {
       })
     })
 
-    fetch(endpointURL2)
-    .then(response => response.json())
-    .then(response => {
-      this.setState({
-        domestic: response
-      })
-    })
-
+  
 }
 
 
@@ -40,7 +32,6 @@ class Fixture extends Component {
 
 
     let intl = this.state.intl;
-    let domestic = this.state.domestic; 
 
     let intlLoop = intl.map((post, index) => {
       return (
@@ -51,13 +42,14 @@ class Fixture extends Component {
               <p className="card-text">
 
 
-                {post.match_name} | {post.city}<br /><br/>
-                <img src={post.team1_logo} alt="team2" height="50px" />
-                {" " + post.team1_name} vs {post.team2_name + " "}
-                <img src={post.team2_logo} alt="team2" height="50px" />
+                {post.series} | {post.venue}<br /><br/>
+                <img src={"http://i.cricketcb.com/cbzandroid/2.0/flags/team_" + post.teamOne + "_50.png"} alt="team2" height="50px" />
+                  {" vs "}
+                  <img src={"http://i.cricketcb.com/cbzandroid/2.0/flags/team_" + post.teamTwo + "_50.png"} alt="team2" height="50px" /><br/>
+                {post.desc}
                 <br /><br />
 
-                <button type="button" className="btn btn-success">{"Starts in "+post.time}</button>
+                <button type="button" className="btn btn-success">{post.start + " | "+post.date}</button>
               
               </p>
             </div></div>
@@ -66,44 +58,19 @@ class Fixture extends Component {
       )
     })
 
-    let domesticLoop = domestic.map((post, index) => {
-      return (
-       
-        <article key={index} width="50%" className='fixture-block'>
-          <div className="card bg-white">
-            <div className="card-body text-center">
-              <p className="card-text">
-
-
-                {post.match_name} | {post.city}<br /><br/>
-                <img src={post.team1_logo} alt="team2" height="50px" />
-                {" " + post.team1_name} vs {post.team2_name + " "}
-                <img src={post.team2_logo} alt="team2" height="50px" />
-                <br /><br />
-
-                <button type="button" className="btn btn-success">{"Starts in "+post.time}</button>
-              
-              </p>
-            </div></div>
-        </article>
-
-      )
-    })
+    
 
 
     return (
 
       <div>
-         <h5 align="center">International</h5>
+         <h3>Fixture</h3>
         <hr/>
 
         {intlLoop}
 
       <br/><br/>
-     <h5 align="center">Domestic</h5>
-    <hr/>
-
-    {domesticLoop}
+    
 
   </div>
  
